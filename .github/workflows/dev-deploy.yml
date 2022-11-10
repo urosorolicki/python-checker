@@ -1,7 +1,9 @@
+on:
+  push:
+    branches: [ master ]
+
 name: Dev - Deploy
 
-on:
-  workflow_dispatch:
 
 jobs:
   build:
