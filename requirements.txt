@@ -24,6 +24,6 @@ urllib3==1.26.12
 future==0.18.2
 virustotal-api==1.1.11
 os-sys==2.1.4
-zipfile36=0.1.3
+zipfile36==0.1.3
 jsonlib==1.6.1
 
