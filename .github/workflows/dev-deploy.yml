@@ -1,0 +1,17 @@
+name: Dev - Deploy
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout new branch
+        uses: actions/checkout@v2
+
+      - name: Run python script
+        run: |
+          pip3 install -r requirements.txt
+          python MalwareChecker.py source_ioc_list.txt
