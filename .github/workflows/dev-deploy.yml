@@ -15,7 +15,5 @@ jobs:
 
       - name: Run python script
         run: |
-          pip install pipwin
-          pipwin install jsonlib
           pip3 install -r requirements.txt
           python MalwareChecker.py source_ioc_list.txt
