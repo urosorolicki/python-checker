@@ -2,7 +2,7 @@ on:
   push:
     branches: [ master ]
 
-name: Dev - Deploy
+name: Python Run
 
 
 jobs:
