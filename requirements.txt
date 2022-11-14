@@ -25,4 +25,5 @@ future==0.18.2
 virustotal-api==1.1.11
 zipfile36==0.1.3
 jsonlib==1.6.1
+testresources==2.0.1
 
