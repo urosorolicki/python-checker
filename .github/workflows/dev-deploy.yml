@@ -4,7 +4,6 @@ on:
 
 name: Python Run
 
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -13,10 +12,6 @@ jobs:
       - name: Checkout new branch
         uses: actions/checkout@v2
 
-      - name: Open File
-        working-directory: src/file.ibaloglu
-        run: |
-          ls -la
       - name: Run python script
         run: |
           pip3 install -r requirements.txt
