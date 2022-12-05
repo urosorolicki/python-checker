@@ -16,3 +16,9 @@ jobs:
         run: |
           pip3 install -r requirements.txt
           python MalwareChecker.py source_ioc_list.txt
+      - name: commit
+        run: git add .
+             git config --local user.email github-actions
+             git config --local user.name github-actions@github.com
+             git commit -m "Update deployment" -a
+             git push
