@@ -15,7 +15,7 @@ def str_to_file(text, filename):
     output.write(text)
     output.close()
 
-beginning = ''' This tool generates HTML reports by comparing hashes from the VirusTotal database. \n Example Usage: MalwareChecker.py Source_ioc_List.txt'''
+beginning = ''' This tool generates HTML reports by comparing hashes from the VirusTotal database. \n Example Usage: checker.py Source_ioc_List.txt'''
 show = argparse.ArgumentParser(description=beginning)
 #show.add_argument("-hash", "--hash", type=str, help='Hash turu (md5, MD5, sha1, SHA1, sha256,SHA256)')
 show.add_argument("file", type=str, help='IoC Listesi (txt dosyasi)')
