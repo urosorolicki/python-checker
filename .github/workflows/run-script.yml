@@ -15,7 +15,7 @@ jobs:
       - name: Run python script
         run: |
           pip3 install -r requirements.txt
-          python MalwareChecker.py source_ioc_list.txt
+          python checker.py source_ioc_list.txt
       - name: commit
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
